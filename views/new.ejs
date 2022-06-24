@@ -1,0 +1,27 @@
+<% include ./partials/header %>
+
+    <div class="ui main text container segment">
+        <h2 class="ui center aligned icon header">
+            <i class="circular users icon"></i>
+            YENİ GÖNDERİ
+        </h2>
+        <form action="/blogs" method="POST" class="ui form">
+            <div class="field">
+                <label>Başlık</label>
+                <input type="text" name="blog[title]" placeholder="Başlık Giriniz">
+            </div>
+            <div class="field">
+                <label>Görsel</label>
+                <input type="text" name="blog[image]" placeholder="Görsel Linki Giriniz">
+            </div>
+            <div class="field">
+                <label>İçerik</label>
+                <textarea name="blog[body]">
+
+            </textarea>
+            </div>
+            <button class="ui inverted big violet button">Gönder</button>
+        </form>
+    </div>
+
+    <% include ./partials/footer %>

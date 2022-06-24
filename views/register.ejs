@@ -1,0 +1,25 @@
+<% include ./partials/header %>
+
+  <h1>KAYIT FORMU</h1>
+  <form action="/register" method="POST">
+    <div class="ui massive form">
+      <div class="two fields">
+        <div class="field">
+          <label>Kullanıcı Adı</label>
+          <input placeholder="Kullanıcı Adı Giriniz" type="text" name="username">
+        </div>
+        <div class="field">
+          <label>Şifre</label>
+          <input placeholder="Şifre Giriniz" type="password" name="password">
+        </div>
+        <div class="field checkbox">
+          <label>Admin</label>
+          <input type="checkbox" name="admin">
+        </div>
+      </div>
+      <button class="big ui primary button">Kayıt Ol</button>
+    </div>
+  </form>
+
+
+  <% include ./partials/footer %>

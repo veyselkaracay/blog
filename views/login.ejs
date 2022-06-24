@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+
+  <h1>GİRİŞ FORMU</h1>
+  <form action="/login" method="POST">
+    <div class="ui massive form">
+      <div class="two fields">
+        <div class="field">
+          <label>Kullanıcı Adı</label>
+          <input placeholder="Kullanıcı Adınızı Giriniz" type="text" name="username">
+        </div>
+        <div class="field">
+          <label>Şifre</label>
+          <input placeholder="Şifre Giriniz" type="password" name="password">
+        </div>
+      </div>
+      <button class="big ui primary button">GİRİŞ</button>
+    </div>
+  </form>
+
+
+  <% include ./partials/footer %>
